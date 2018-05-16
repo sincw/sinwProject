@@ -83,12 +83,11 @@ export class MagicFace {
         var vers = [];
         for (var key in resulr) {
             var val = resulr[key];
-            var ver = [];
-            for (var i = 0; i < 4; i++) {
-                var dian = [val[i].x + 400, val[i].z + 400];
-                ver.push(dian);
-            }
-            vers.push(ver);
+            var va = [];
+            val.forEach((v,index)=>{
+                va.push(new Vertex(v.x+400,v.y,v.z+400));
+            })
+            vers.push(va);
         }
         // for (var i = 0; i < 4; i++) {
         //     ctx.fillStyle = 'black';
@@ -115,25 +114,17 @@ export class MagicFace {
         // ctx.stroke();
         // ctx.fill();
 
-        var vers2 = [];
-        for(var o = 0;o<2;o++){
-            var vers21 = [];
-            for(var o1 = 0;o1<4;o1++){
-                vers21.push(new Vertex(vers[o][o1][0],0,vers[o][o1][1]))
-            }
-            vers2.push(vers21);
-        }
 
         var result = false;
         if (
-            this.isPolygonContainsPoint(vertexs1,vers2[0]) && this.isPolygonContainsPoint(vertexs2,vers2[0])
-            //this.insidePolygon(vertexs1.x, vertexs1.z, vers[0]) && this.insidePolygon(vertexs2.x, vertexs2.z, vers[0])
+            this.isPolygonContainsPoint(vertexs1,vers[0]) && this.isPolygonContainsPoint(vertexs2,vers[0])
+        //this.insidePolygon(vertexs1.x, vertexs1.z, vers[0]) && this.insidePolygon(vertexs2.x, vertexs2.z, vers[0])
         ) {
             result = true;
         }
         if (
-            this.isPolygonContainsPoint(vertexs1,vers2[1]) && this.isPolygonContainsPoint(vertexs2,vers2[1])
-            //this.insidePolygon(vertexs1.x, vertexs1.z, vers[1]) && this.insidePolygon(vertexs2.x, vertexs2.z, vers[1])
+            this.isPolygonContainsPoint(vertexs1,vers[1]) && this.isPolygonContainsPoint(vertexs2,vers[1])
+        //this.insidePolygon(vertexs1.x, vertexs1.z, vers[1]) && this.insidePolygon(vertexs2.x, vertexs2.z, vers[1])
         ) {
             result = true;
         }
@@ -186,6 +177,8 @@ export class MagicFace {
     }
 
     isPolygonContainsPoint(point, mPoints) {
+        if(!point || !mPoints)
+            return false;
         var nCross = 0;
         for (var i = 0; i < mPoints.length; i++) {
             var p1 = mPoints[i];
