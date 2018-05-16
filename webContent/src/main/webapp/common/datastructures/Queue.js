@@ -36,7 +36,7 @@ export class Queue {
      * @param a
      * @return r
      */
-    rear = () => {
+    rear(){
         return this.arr[this.arr.length - 1];
     }
     /**
@@ -44,7 +44,7 @@ export class Queue {
      * @param a
      * @return r
      */
-    empty = () => {
+    empty(){
         return this.arr.length == 0;
     }
     /**
@@ -52,7 +52,11 @@ export class Queue {
      * @param a
      * @return r
      */
-    size = () => {
+    size(){
         return this.arr.length;
+    }
+
+    clear(){
+        this.arr = [];
     }
 }

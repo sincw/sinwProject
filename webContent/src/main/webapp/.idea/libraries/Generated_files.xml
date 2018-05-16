@@ -2,27 +2,43 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/common/datastructures/PriorityQueue.js" />
+        <item url="file://$PROJECT_DIR$/dist/common/datastructures/Queue.js" />
         <item url="file://$PROJECT_DIR$/dist/common/utils/MathUtil.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/jquery.min.js" />
         <item url="file://$PROJECT_DIR$/dist/work/cube/Main.js" />
         <item url="file://$PROJECT_DIR$/dist/work/cube/js/Cube.js" />
         <item url="file://$PROJECT_DIR$/dist/work/cube/js/Vertex.js" />
+        <item url="file://$PROJECT_DIR$/dist/work/magiccube/Main.js" />
+        <item url="file://$PROJECT_DIR$/dist/work/magiccube/js/Cube.js" />
+        <item url="file://$PROJECT_DIR$/dist/work/magiccube/js/CubeUtil.js" />
+        <item url="file://$PROJECT_DIR$/dist/work/magiccube/js/Face.js" />
+        <item url="file://$PROJECT_DIR$/dist/work/magiccube/js/MagicCube.js" />
+        <item url="file://$PROJECT_DIR$/dist/work/magiccube/js/MagicFace.js" />
+        <item url="file://$PROJECT_DIR$/dist/work/magiccube/js/Vertex.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/common/MathUtil.js" />
-      <root url="file://$PROJECT_DIR$/dist/common/datastructures/PriorityQueue.js" />
-      <root url="file://$PROJECT_DIR$/dist/common/datastructures/Queue.js" />
       <root url="file://$PROJECT_DIR$/dist/common/utils/BaseUtil.js" />
       <root url="file://$PROJECT_DIR$/dist/work/audiogram/Main.js" />
       <root url="file://$PROJECT_DIR$/dist/work/audiogram/init.js" />
       <root url="file://$PROJECT_DIR$/dist/work/audiogram/js/Audio.js" />
       <root url="file://$PROJECT_DIR$/dist/work/audiogram/js/ResourcesLoader.js" />
+      <root url="file://$PROJECT_DIR$/dist/common/datastructures/PriorityQueue.js" />
+      <root url="file://$PROJECT_DIR$/dist/common/datastructures/Queue.js" />
       <root url="file://$PROJECT_DIR$/dist/common/utils/MathUtil.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/jquery.min.js" />
       <root url="file://$PROJECT_DIR$/dist/work/cube/Main.js" />
       <root url="file://$PROJECT_DIR$/dist/work/cube/js/Cube.js" />
       <root url="file://$PROJECT_DIR$/dist/work/cube/js/Vertex.js" />
+      <root url="file://$PROJECT_DIR$/dist/work/magiccube/Main.js" />
+      <root url="file://$PROJECT_DIR$/dist/work/magiccube/js/Cube.js" />
+      <root url="file://$PROJECT_DIR$/dist/work/magiccube/js/CubeUtil.js" />
+      <root url="file://$PROJECT_DIR$/dist/work/magiccube/js/Face.js" />
+      <root url="file://$PROJECT_DIR$/dist/work/magiccube/js/MagicCube.js" />
+      <root url="file://$PROJECT_DIR$/dist/work/magiccube/js/MagicFace.js" />
+      <root url="file://$PROJECT_DIR$/dist/work/magiccube/js/Vertex.js" />
     </CLASSES>
     <SOURCES />
   </library>

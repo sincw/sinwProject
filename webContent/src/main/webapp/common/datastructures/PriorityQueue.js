@@ -1,4 +1,4 @@
-import {Queue} from "./Queue";
+import {Queue} from "./Queue.js";
 
 export class PriorityQueue extends Queue{
 
@@ -15,7 +15,7 @@ export class PriorityQueue extends Queue{
      * desc 重写push函数.
      * @param node
      */
-    push = (node) => {
+    push(node){
         let arrList = this.arr;
         if (!this.foperator) {
             this.foperator = node.operator;
