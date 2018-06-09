@@ -1,0 +1,8 @@
+{
+  "path": "./asset/textures/default/blocks/",
+  "brick": {
+    "structure": 1,
+    "url": ["brick"],
+    "icontype":".png"
+  }
+}
